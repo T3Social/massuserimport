@@ -1,0 +1,62 @@
+*** CONFIGURABLE USER DETAILS ***
+*********************************
+
+*** REQUIRED data ***************
+*********************************
+user.email:_____________The users email adress has to be unique.                                                          REQUIRED
+profile.firstname:______Users first name.                                                                                 REQUIRED
+profile.lastname:_______Users last name.                                                                                  REQUIRED
+
+*** Further Details *************
+*********************************
+group_ids:______________Comma separated group ids user should be initially assigned to. To make a user admin,             Default: The group declared as available at registration with the smallest id. This is normally the "Users" group with id 2.
+                        assign him to the admin group (normally id 1).
+password.newPassword:___The user password.                                                                                GENERATED IF EMPTY: If left empty, a 15 sign long, safe and random password will be generated.
+user.username:__________Unique name to identify users.                                                                    GENERATED IF EMPTY: Will be generated from profile.firstname and profile.lastname if empty. If a given username is already taken, a number will be appended. 
+user.tags:______________User tags.                                                                                        Default: empty
+user.language:__________The users preferred language.                                                                     Default: empty
+user.visibility:________0: Not visible | 1: visible                                                                       Default: 1
+user.time_zone:_________The timezone                                                                                      Default: Europe/Berlin, depending on your installation
+profile.title:__________User detail information.                                                                          Default: empty
+profile.street:_________User detail information.                                                                          Default: empty
+profile.zip:____________User detail information.                                                                          Default: empty
+profile.city:___________User detail information.                                                                          Default: empty
+profile.country:________User detail information. Dependent on profile field settings might accept only                    Default: empty
+                        country codes specified in ISO 3166 (e.g. GB, DE, US, ...).                                                              
+profile.state:__________User detail information.                                                                          Default: empty
+profile.birthday:_______User detail information.  Dependent on profile field settings might accept only                   Default: empty
+                        a valid date string.                                                                             
+profile.phone_private:__User detail information.                                                                          Default: empty
+profile.phone_work:_____User detail information.                                                                          Default: empty
+profile.mobile:_________User detail information.                                                                          Default: empty
+profile.fax:____________User detail information.                                                                          Default: empty
+profile.im_skype:_______Skype user name.                                                                                  Default: empty
+profile.im_msn:_________Msn user name.                                                                                    Default: empty
+profile.im_xmpp:________xmpp user name.                                                                                   Default: empty
+profile.url_facebook:___Social network url.                                                                               Default: empty
+profile.url_linkedin:___Social network url.                                                                               Default: empty
+profile.url_xing:_______Social network url.                                                                               Default: empty
+profile.url_youtube:____Social network url.                                                                               Default: empty
+profile.url_vimeo:______Social network url.                                                                               Default: empty
+profile.url_flickr:_____Social network url.                                                                               Default: empty
+profile.url_myspace:____Social network url.                                                                               Default: empty
+profile.url_googleplus:_Social network url.                                                                               Default: empty
+profile.url_twitter:____Social network url.                                                                               Default: empty
+
+Additional info:
+* As an administrator, you can define new profile fields in the Admin->Profile view. You should be able to fill these with the massuserimport as well with the identifier profile.<your_field_name>. 
+* Profile fields may have restrictions in the values that can be set to them. E.g. profile.date is of type type "date" and will be validated against that. profile.country accepts only country codes specified in ISO 3166.
+
+*** Example csv *****************
+*********************************
+Please copy and adapt the csv below.
+
+user.email;profile.firstname;profile.lastname;user.username;group_ids;password.newPassword;profile.street;profile.zip;profile.city;profile.country;profile.mobile
+max.mustermann@mail.com;Max;Mustermann;m_mustermann;1,2;dummyPassword124;Musterstr.;88888;Musterhausen;DE;0190888888888
+martha.mustermann@mail.com;Martha;Mustermann;ma_mustermann;1;dummyPassword123;;;;;0190999999999
+pia.mustermann1@mail.com;Pia;Mustermann;;;;;;;;
+pia.mustermann2@mail.com;Pia;Mustermann;;;;;;;;
+pia.mustermann3@mail.com;Pia;Mustermann;;;;;;;;
+pia.mustermann4@mail.com;Pia;Mustermann;;;;;;;;
+pia.mustermann5@mail.com;Pia;Mustermann;;;;;;;;
+martha.mustermann2@mail.com;Martha;Mustermann;ma_mustermann;;;;;;;

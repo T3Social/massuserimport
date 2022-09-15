@@ -1,0 +1,29 @@
+{
+  "id": "massuserimport",
+  "name": "Mass User Import",
+  "description": "Imports User from a CSV file.",
+  "keywords": [
+    "user",
+    "mass",
+    "import"
+  ],
+  "humhub": {
+    "minVersion": "1.1"
+  },
+  "authors": [
+    {
+      "name": "Sebastian Stumpf"
+    },
+    {
+      "name": "Lucas Bartholemy"
+    },
+    {
+      "name": "Julian Harrer"
+    }
+  ],
+  "version": "1.1.8",
+  "homepage": "https://github.com/humhub/massuserimport-issues",
+  "screenshots": [
+    "assets/screen_1.jpg"
+  ]
+}

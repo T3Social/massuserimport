@@ -1,0 +1,16 @@
+*** CONFIGURABLE INVITATION DETAILS ***
+*********************************
+
+*** REQUIRED data ***************
+*********************************
+email:__________________The users email adress has to be unique.                                                          REQUIRED
+firstname:______________Users first name.                                                                                 REQUIRED
+lastname:_______________Users last name.                                                                                  REQUIRED
+
+*** Example csv *****************
+*********************************
+Please copy and adapt the csv below.
+
+email;firstname;lastname
+manuel.mustermann@mail.com;Manuel;Mustermann
+magda.mustermann@mail.com;Magda;Mustermann
